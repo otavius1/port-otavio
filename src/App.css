@@ -1,0 +1,52 @@
+:root {
+  --fonte: 'Open Sans', sans-serif;
+  --branco: #FFFFFF;
+  --branco-fumaca: #F4F4F4;
+  --preto: #000000;
+  --laranja: #EE8728;
+  --laranja-claro: #FFD599;
+  --cinza: #F4F4F4;
+  --azul: #0188CC;
+  --azul-claro: #BCE8F1;
+  --azul-petroleo: #31708F;
+  --azul-marinho: #00293D;
+  --azul-pastel: #D9EDF7;
+  --azul-vivido: #0088CD;
+  --vermelho: #FF0000;
+  --vermelho-claro: #FF6666;
+  --vermelho-fonte: #B51C20;
+  --vermelho-fundo-footer: #A51B1C;
+  --verde: #008000;
+  --verde-claro: #90EE90;
+  --amarelo: #FFFF00;
+  --amarelo-claro: #FFFFE0;
+  --roxo: #800080;
+  --roxo-claro: #D8BFD8;
+  --rosa: #FFC0CB;
+  --rosa-claro: #FFB6C1;
+  --cinza-escuro: #A9A9A9;
+  --cinza-medio: #C0C0C0;
+  --cinza-claro: #D3D3D3;
+  --cinza-clarissimo: #ECECEC;
+  --cinza-fonte: #686868;
+  --marrom: #A52A2A;
+  --bege: #F5F5DC;
+  --turquesa: #40E0D0;
+}
+
+.App {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+#particles canvas {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+}
