@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import { keyframes } from "@emotion/react";
 
-export default function Apresentacao() {
+export default function Apresentacao({ scrollToNext }) {
     const bounceAnimation = keyframes`
         0%, 100% {
             transform: translateY(0);
@@ -16,7 +16,7 @@ export default function Apresentacao() {
     `;
 
     return (
-        <Grid container spacing={0} sx={{ display: "flex", flexDirection: "column", height: "100vh" }}>
+        <Grid container spacing={0} sx={{ display: "flex", flexDirection: "column", height: "95vh" }}>
             <Grid
                 item
                 xs
@@ -70,11 +70,11 @@ export default function Apresentacao() {
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
-                            gap: "15px", 
+                            gap: "15px",
                             marginTop: "10px",
                         }}
                     >
-                        <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/otavio-r-9684aa162/" ><LinkedInIcon sx={{ color: "#fff", fontSize: "3rem", cursor: "pointer" }} /></a> 
+                        <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/otavio-r-9684aa162/" ><LinkedInIcon sx={{ color: "#fff", fontSize: "3rem", cursor: "pointer" }} /></a>
                         <a rel="noreferrer" target="_blank" href="https://github.com/otavius1"><GitHubIcon sx={{ color: "#fff", fontSize: "3rem", cursor: "pointer" }} /></a>
                         <a rel="noreferrer" target="_blank" href="mailto:otavio.rodri3@gmail.com"><EmailIcon sx={{ color: "#fff", fontSize: "3rem", cursor: "pointer" }} /></a>
                     </Grid>
@@ -91,6 +91,7 @@ export default function Apresentacao() {
                 }}
             >
                 <Button
+                    onClick={scrollToNext}
                     sx={{
                         animation: `${bounceAnimation} 1.5s infinite`,
                         color: "#fff",
