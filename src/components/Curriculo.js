@@ -63,19 +63,19 @@ export default function Curriculo() {
                         <img src={Perfil} alt="Imagem de perfil" style={{ borderRadius: '50%', width: '100%' }} />
                     </Grid>
                     <Grid item xs={10} display="flex" justifyContent="center" alignItems="center">
-                        <Typography sx={{ fontWeight: 'bold', color: 'var(--cinza-fonte)', fontSize: '2rem', textAlign: 'center' }}>
+                            <Typography sx={{ fontWeight: 'bold', color: 'var(--cinza-fonte)', fontSize: '2rem', textAlign: 'center', userSelect: "none" }}>
                             Currículo
                         </Typography>
                     </Grid>
                 </Grid>
 
-                <Typography sx={{ fontWeight: 'bold', fontSize: '1.5rem', marginBottom: '1rem', textAlign: 'flex-start' }}>
+                <Typography sx={{ fontWeight: 'bold', fontSize: '1.5rem', marginBottom: '1rem', textAlign: 'flex-start', userSelect: "none" }}>
                     Experiência
                 </Typography>
                 <Divider sx={{ marginBottom: '1rem' }} />
                 {experiencias.map((exp, index) => (
                     <Grid key={index} sx={{ marginBottom: '1rem' }}>
-                        <Typography sx={{ fontWeight: 'bold', color: 'var(--azul)' }}>{exp.titulo}</Typography>
+                        <Typography sx={{ fontWeight: 'bold', color: 'var(--azul)', userSelect: "none" }}>{exp.titulo}</Typography>
                         <Typography variant="subtitle2" color="textSecondary">
                             {exp.empresa}
                         </Typography>
